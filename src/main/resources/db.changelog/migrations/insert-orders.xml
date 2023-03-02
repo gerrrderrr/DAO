@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet id="insert-orders" author="olga-kozlova">
+        <insert tableName="orders">
+            <column name="date" value="now()"/>
+            <column name="customer_id" value="2"/>
+            <column name="product_name" value="Coconut milk"/>
+            <column name="amount" value="2"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="date" value="now()"/>
+            <column name="customer_id" value="3"/>
+            <column name="product_name" value="Potato"/>
+            <column name="amount" value="20"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="date" value="now()"/>
+            <column name="customer_id" value="1"/>
+            <column name="product_name" value="Water"/>
+            <column name="amount" value="4"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="date" value="now()"/>
+            <column name="customer_id" value="4"/>
+            <column name="product_name" value="Water"/>
+            <column name="amount" value="6"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="date" value="now()"/>
+            <column name="customer_id" value="6"/>
+            <column name="product_name" value="Apples"/>
+            <column name="amount" value="10"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="date" value="now()"/>
+            <column name="customer_id" value="1"/>
+            <column name="product_name" value="Soda"/>
+            <column name="amount" value="1"/>
+        </insert>
+        <insert tableName="orders">
+            <column name="date" value="now()"/>
+            <column name="customer_id" value="5"/>
+            <column name="product_name" value="Bread"/>
+            <column name="amount" value="1"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

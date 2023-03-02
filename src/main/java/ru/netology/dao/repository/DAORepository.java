@@ -26,7 +26,7 @@ public class DAORepository {
         parameter.put("name", name);
         List<String> response = namedParameterJdbcTemplate
                 .query(request, parameter, (rs, rowNum) -> rs.getString(1));
-        String products = String.join("\n", response);
+        String products = String.join(", ", response);
         return new DAOResponse(products);
     }
 

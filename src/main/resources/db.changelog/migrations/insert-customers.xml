@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
+    <changeSet id="insert-customers" author="olga-kozlova">
+        <insert tableName="customers">
+            <column name="name" value="Anna"/>
+            <column name="surname" value="Smith"/>
+            <column name="age" value="23"/>
+            <column name="phone_number" value="79998887766"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Brian"/>
+            <column name="surname" value="Warner"/>
+            <column name="age" value="44"/>
+            <column name="phone_number" value="76665554433"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Vi"/>
+            <column name="surname" value="Unknown"/>
+            <column name="age" value="25"/>
+            <column name="phone_number" value="74443332211"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Tomas"/>
+            <column name="surname" value="Edison"/>
+            <column name="age" value="67"/>
+            <column name="phone_number" value="71112223344"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Alexey"/>
+            <column name="surname" value="Edison"/>
+            <column name="age" value="80"/>
+            <column name="phone_number" value="71112223344"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="John"/>
+            <column name="surname" value="Almond"/>
+            <column name="age" value="4"/>
+            <column name="phone_number" value="71112223344"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Emma"/>
+            <column name="surname" value="Mug"/>
+            <column name="age" value="22"/>
+            <column name="phone_number" value="71112223344"/>
+        </insert>
+        <insert tableName="customers">
+            <column name="name" value="Arthur"/>
+            <column name="surname" value="Morgan"/>
+            <column name="age" value="36"/>
+            <column name="phone_number" value="74446669900"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
