@@ -4,6 +4,8 @@ import org.springframework.stereotype.Service;
 import ru.netology.dao.advice.response.DAOResponse;
 import ru.netology.dao.repository.DAORepository;
 
+import java.util.List;
+
 @Service
 public class DAOService {
     private final DAORepository repository;
@@ -13,6 +15,7 @@ public class DAOService {
     }
 
     public DAOResponse fetchProduct(String name) {
-        return repository.fetchProduct(name);
+        List<String> products = repository.fetchProduct(name);
+        return new DAOResponse(String.join(", ", products));
     }
 }
