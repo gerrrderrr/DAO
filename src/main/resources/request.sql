@@ -1,1 +1,1 @@
-SELECT product_name FROM public.ORDERS JOIN public.CUSTOMERS c on c.id = ORDERS.customer_id WHERE lower(name) = lower(:name)
+SELECT * FROM public.ORDERS JOIN CUSTOMERS ON ORDERS.customer_id = CUSTOMERS.id WHERE lower(name) = lower(:name)

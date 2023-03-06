@@ -5,7 +5,7 @@
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.6.xsd">
     <changeSet id="create-table-orders" author="olga-kozlova">
         <createTable tableName="orders">
-            <column name="id" type="int" autoIncrement="true">
+            <column name="order_id" type="int" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
             <column name="date" type="date">
